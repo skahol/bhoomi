@@ -4,44 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ram Bhoomi Engineering Solutions - Premier geotechnical and civil engineering consultancy delivering excellence in soil investigation, foundation design, and infrastructure development.">
-    <meta name="keywords" content="geotechnical engineering, soil investigation, foundation design, civil engineering, infrastructure, construction, engineering consultancy">
+    <meta name="keywords" content="geotechnical engineering, soil investigation, foundation design, civil engineering, infrastructure, construction, engineering consultancy, India">
     <meta name="author" content="Ram Bhoomi Engineering">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ram Bhoomi Engineering | Geotechnical & Civil Engineering Solutions">
+    <meta property="og:description" content="Premier geotechnical and civil engineering consultancy delivering excellence in soil investigation, foundation design, and infrastructure development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://skahol.github.io/bhoomi/">
+    
     <title>Ram Bhoomi Engineering | Geotechnical & Civil Engineering Solutions</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%231a3a5c' rx='15' width='100' height='100'/><text x='50' y='65' text-anchor='middle' fill='%23d4a84b' font-family='serif' font-size='50' font-weight='bold'>RB</text></svg>">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Premium Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
             --color-primary: #1a3a5c;
             --color-primary-dark: #0d2137;
-            --color-accent: #d4a84b;
-            --color-accent-light: #e8c77b;
+            --color-primary-light: #2c5282;
+            --color-accent: #c9a227;
+            --color-accent-light: #dbb94a;
+            --color-accent-glow: rgba(201, 162, 39, 0.3);
             --color-earth: #8b5a2b;
             --color-earth-light: #a67c52;
             --color-stone: #4a5568;
             --color-stone-light: #718096;
-            --color-cream: #faf8f5;
+            --color-cream: #faf9f7;
+            --color-cream-dark: #f5f3ef;
             --color-white: #ffffff;
-            --color-text: #2d3748;
+            --color-text: #1a202c;
             --color-text-light: #4a5568;
+            --color-success: #38a169;
             
-            --font-display: 'Playfair Display', Georgia, serif;
-            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-display: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
             
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
-            --shadow-lg: 0 10px 25px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.08);
-            --shadow-xl: 0 20px 40px rgba(0,0,0,0.2);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1), 0 5px 10px rgba(0,0,0,0.06);
+            --shadow-xl: 0 20px 40px rgba(0,0,0,0.12), 0 10px 20px rgba(0,0,0,0.08);
+            --shadow-glow: 0 0 40px var(--color-accent-glow);
             
-            --transition-fast: 0.2s ease;
-            --transition-medium: 0.4s ease;
-            --transition-slow: 0.6s ease;
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-medium: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            
+            --blur-sm: blur(4px);
+            --blur-md: blur(10px);
+            --blur-lg: blur(20px);
         }
 
         *, *::before, *::after {
@@ -63,6 +80,82 @@
             overflow-x: hidden;
         }
 
+        /* Premium Noise Texture Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10000;
+            opacity: 0.02;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Premium Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--color-primary-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .preloader-logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-earth) 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 2rem;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        .preloader-bar {
+            width: 200px;
+            height: 3px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .preloader-progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+            border-radius: 3px;
+            animation: loading 1.5s ease-in-out forwards;
+        }
+
+        @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 var(--color-accent-glow); }
+            50% { transform: scale(1.05); box-shadow: 0 0 30px 10px var(--color-accent-glow); }
+        }
+
         /* Typography */
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
@@ -71,8 +164,8 @@
             color: var(--color-primary-dark);
         }
 
-        h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-        h2 { font-size: clamp(2rem, 4vw, 3rem); }
+        h1 { font-size: clamp(2.75rem, 5.5vw, 4.5rem); letter-spacing: -0.02em; }
+        h2 { font-size: clamp(2.25rem, 4.5vw, 3.5rem); letter-spacing: -0.01em; }
         h3 { font-size: clamp(1.5rem, 3vw, 2rem); }
 
         p {
@@ -93,7 +186,7 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            padding: 1rem 5%;
+            padding: 1.25rem 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -102,8 +195,9 @@
         }
 
         .navbar.scrolled {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: var(--blur-md);
+            -webkit-backdrop-filter: var(--blur-md);
             box-shadow: var(--shadow-md);
             padding: 0.75rem 5%;
         }
@@ -111,47 +205,85 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 0.75rem;
+            gap: 0.875rem;
         }
 
         .logo-icon {
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
             background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-earth) 100%);
-            border-radius: 8px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             color: white;
             font-weight: 700;
             font-family: var(--font-display);
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.2) 50%, transparent 70%);
+            animation: shimmer 3s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) rotate(45deg); }
         }
 
         .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text-main {
             font-family: var(--font-display);
-            font-size: 1.4rem;
-            font-weight: 600;
+            font-size: 1.35rem;
+            font-weight: 700;
             color: var(--color-white);
+            transition: color var(--transition-fast);
+            line-height: 1.1;
+        }
+
+        .logo-text-sub {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 2px;
+            text-transform: uppercase;
             transition: color var(--transition-fast);
         }
 
-        .navbar.scrolled .logo-text {
+        .navbar.scrolled .logo-text-main {
             color: var(--color-primary-dark);
+        }
+
+        .navbar.scrolled .logo-text-sub {
+            color: var(--color-text-light);
         }
 
         .nav-links {
             display: flex;
             gap: 2.5rem;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
             color: rgba(255, 255, 255, 0.9);
             font-weight: 500;
             font-size: 0.95rem;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
             position: relative;
             padding: 0.5rem 0;
         }
@@ -176,11 +308,12 @@
         }
 
         .nav-cta {
-            background: var(--color-accent);
+            background: var(--color-accent) !important;
             color: var(--color-primary-dark) !important;
-            padding: 0.75rem 1.5rem !important;
-            border-radius: 4px;
+            padding: 0.75rem 1.75rem !important;
+            border-radius: 6px;
             font-weight: 600 !important;
+            box-shadow: var(--shadow-sm);
         }
 
         .nav-cta::after {
@@ -188,7 +321,9 @@
         }
 
         .nav-cta:hover {
-            background: var(--color-accent-light);
+            background: var(--color-accent-light) !important;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         .mobile-toggle {
@@ -217,65 +352,71 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 50%, #2c5282 100%);
+            background: linear-gradient(160deg, var(--color-primary-dark) 0%, var(--color-primary) 40%, var(--color-primary-light) 100%);
             overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
+        /* Animated Mesh Gradient */
+        .hero-mesh {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            inset: 0;
             background: 
-                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
+                radial-gradient(ellipse 80% 50% at 20% 40%, rgba(201, 162, 39, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 40% at 80% 60%, rgba(139, 90, 43, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 30% at 40% 80%, rgba(44, 82, 130, 0.2) 0%, transparent 50%);
+            animation: meshMove 15s ease-in-out infinite;
         }
 
-        .hero-bg-shapes {
+        @keyframes meshMove {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.1); }
+        }
+
+        /* Floating Particles */
+        .particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: particleFloat 20s infinite;
+        }
+
+        .particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; animation-duration: 25s; }
+        .particle:nth-child(2) { left: 20%; top: 80%; animation-delay: -5s; animation-duration: 20s; }
+        .particle:nth-child(3) { left: 30%; top: 40%; animation-delay: -10s; animation-duration: 28s; }
+        .particle:nth-child(4) { left: 50%; top: 60%; animation-delay: -15s; animation-duration: 22s; }
+        .particle:nth-child(5) { left: 70%; top: 30%; animation-delay: -8s; animation-duration: 26s; }
+        .particle:nth-child(6) { left: 80%; top: 70%; animation-delay: -12s; animation-duration: 24s; }
+        .particle:nth-child(7) { left: 90%; top: 50%; animation-delay: -3s; animation-duration: 27s; }
+        .particle:nth-child(8) { left: 40%; top: 90%; animation-delay: -18s; animation-duration: 21s; }
+
+        @keyframes particleFloat {
+            0%, 100% { transform: translateY(0) translateX(0) scale(1); opacity: 0.3; }
+            25% { transform: translateY(-100px) translateX(30px) scale(1.5); opacity: 0.5; }
+            50% { transform: translateY(-50px) translateX(-20px) scale(1); opacity: 0.2; }
+            75% { transform: translateY(-150px) translateX(10px) scale(1.2); opacity: 0.4; }
+        }
+
+        /* Geometric Lines */
+        .hero-lines {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            opacity: 0.1;
+        }
+
+        .hero-lines svg {
             position: absolute;
             width: 100%;
             height: 100%;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .hero-shape {
-            position: absolute;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--color-accent) 0%, transparent 70%);
-            opacity: 0.1;
-            animation: float 20s ease-in-out infinite;
-        }
-
-        .hero-shape:nth-child(1) {
-            width: 600px;
-            height: 600px;
-            top: -200px;
-            right: -100px;
-            animation-delay: 0s;
-        }
-
-        .hero-shape:nth-child(2) {
-            width: 400px;
-            height: 400px;
-            bottom: -100px;
-            left: -100px;
-            animation-delay: -5s;
-        }
-
-        .hero-shape:nth-child(3) {
-            width: 300px;
-            height: 300px;
-            top: 50%;
-            left: 50%;
-            animation-delay: -10s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(10deg); }
         }
 
         .hero-content {
@@ -283,18 +424,20 @@
             z-index: 2;
             text-align: center;
             padding: 0 5%;
-            max-width: 1000px;
+            max-width: 1100px;
         }
 
         .hero-badge {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 0.5rem 1.25rem;
+            gap: 0.75rem;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: var(--blur-sm);
+            -webkit-backdrop-filter: var(--blur-sm);
+            padding: 0.625rem 1.5rem;
             border-radius: 50px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            font-weight: 500;
             color: var(--color-accent-light);
             margin-bottom: 2rem;
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -302,9 +445,17 @@
             opacity: 0;
         }
 
-        .hero-badge::before {
-            content: '◆';
-            font-size: 0.6rem;
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-success);
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
 
         .hero h1 {
@@ -314,23 +465,38 @@
             opacity: 0;
         }
 
-        .hero h1 span {
+        .hero h1 .highlight {
+            position: relative;
             color: var(--color-accent);
+            display: inline-block;
+        }
+
+        .hero h1 .highlight::after {
+            content: '';
+            position: absolute;
+            bottom: 0.1em;
+            left: 0;
+            width: 100%;
+            height: 0.15em;
+            background: var(--color-accent);
+            opacity: 0.3;
+            transform: skewX(-15deg);
         }
 
         .hero-subtitle {
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, 0.8);
-            max-width: 700px;
+            font-size: 1.35rem;
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 750px;
             margin: 0 auto 2.5rem;
             line-height: 1.8;
+            font-weight: 300;
             animation: fadeInUp 0.8s ease 0.4s forwards;
             opacity: 0;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 1rem;
+            gap: 1.25rem;
             justify-content: center;
             flex-wrap: wrap;
             animation: fadeInUp 0.8s ease 0.6s forwards;
@@ -340,39 +506,59 @@
         .btn {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            padding: 1rem 2rem;
+            gap: 0.625rem;
+            padding: 1.125rem 2.25rem;
             font-size: 1rem;
             font-weight: 600;
-            border-radius: 4px;
+            border-radius: 6px;
             cursor: pointer;
             transition: all var(--transition-fast);
             border: none;
             font-family: var(--font-body);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
         }
 
         .btn-primary {
-            background: var(--color-accent);
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-light) 100%);
             color: var(--color-primary-dark);
+            box-shadow: var(--shadow-md), 0 0 20px var(--color-accent-glow);
         }
 
         .btn-primary:hover {
-            background: var(--color-accent-light);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg), 0 0 30px var(--color-accent-glow);
         }
 
         .btn-secondary {
-            background: transparent;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: var(--blur-sm);
             color: var(--color-white);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .btn-secondary:hover {
-            border-color: var(--color-white);
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
 
+        /* Hero Stats */
         .hero-stats {
             display: flex;
             justify-content: center;
@@ -386,64 +572,204 @@
 
         .stat {
             text-align: center;
+            position: relative;
+        }
+
+        .stat::after {
+            content: '';
+            position: absolute;
+            right: -2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .stat:last-child::after {
+            display: none;
         }
 
         .stat-number {
             font-family: var(--font-display);
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
             color: var(--color-accent);
             display: block;
+            line-height: 1;
         }
 
         .stat-label {
             font-size: 0.9rem;
             color: rgba(255, 255, 255, 0.7);
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
+            margin-top: 0.5rem;
+            font-weight: 500;
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: rgba(255,255,255,0.5);
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: fadeInUp 0.8s ease 1s forwards;
+            opacity: 0;
+        }
+
+        .scroll-indicator .mouse {
+            width: 24px;
+            height: 40px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 12px;
+            position: relative;
+        }
+
+        .scroll-indicator .mouse::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 8px;
+            background: var(--color-accent);
+            border-radius: 2px;
+            animation: scrollDown 1.5s infinite;
+        }
+
+        @keyframes scrollDown {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(12px); }
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--color-white);
+            padding: 3rem 5%;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .trust-bar-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-text {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .trust-badges {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--color-cream);
+            border-radius: 8px;
+            transition: all var(--transition-fast);
+        }
+
+        .trust-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .trust-badge-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .trust-badge-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .trust-badge-label {
+            font-size: 0.7rem;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .trust-badge-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-primary-dark);
         }
 
         /* Section Base */
         .section {
-            padding: 6rem 5%;
+            padding: 7rem 5%;
+            position: relative;
         }
 
         .section-header {
             text-align: center;
             max-width: 700px;
-            margin: 0 auto 4rem;
+            margin: 0 auto 5rem;
         }
 
         .section-label {
-            display: inline-block;
-            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
             font-weight: 600;
             color: var(--color-accent);
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             margin-bottom: 1rem;
+        }
+
+        .section-label::before,
+        .section-label::after {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--color-accent);
         }
 
         .section-title {
@@ -451,7 +777,8 @@
         }
 
         .section-desc {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
+            line-height: 1.8;
         }
 
         /* Services Section */
@@ -461,7 +788,7 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -469,12 +796,13 @@
 
         .service-card {
             background: var(--color-cream);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 2.5rem;
             position: relative;
             overflow: hidden;
             transition: all var(--transition-medium);
             border: 1px solid transparent;
+            cursor: pointer;
         }
 
         .service-card::before {
@@ -482,68 +810,136 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 4px;
-            height: 0;
-            background: linear-gradient(180deg, var(--color-accent) 0%, var(--color-earth) 100%);
-            transition: height var(--transition-medium);
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-earth) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-medium);
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-            border-color: rgba(212, 168, 75, 0.2);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: rgba(201, 162, 39, 0.2);
+            background: var(--color-white);
         }
 
         .service-card:hover::before {
-            height: 100%;
+            transform: scaleX(1);
         }
 
         .service-icon {
-            width: 70px;
-            height: 70px;
+            width: 72px;
+            height: 72px;
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-            border-radius: 12px;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
+            margin-bottom: 1.75rem;
+            font-size: 1.75rem;
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-medium);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: var(--shadow-lg);
         }
 
         .service-card h3 {
             margin-bottom: 1rem;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
+            transition: color var(--transition-fast);
+        }
+
+        .service-card:hover h3 {
+            color: var(--color-accent);
         }
 
         .service-card p {
             font-size: 1rem;
-            line-height: 1.7;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
         }
 
         .service-list {
-            margin-top: 1.5rem;
             list-style: none;
         }
 
         .service-list li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
+            padding: 0.625rem 0;
+            padding-left: 1.75rem;
             position: relative;
             font-size: 0.95rem;
             color: var(--color-text-light);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .service-list li:last-child {
+            border-bottom: none;
         }
 
         .service-list li::before {
-            content: '→';
+            content: '✓';
             position: absolute;
             left: 0;
-            color: var(--color-accent);
+            color: var(--color-success);
             font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        /* Clients Section */
+        .clients {
+            background: var(--color-cream-dark);
+            overflow: hidden;
+        }
+
+        .clients-scroll {
+            display: flex;
+            gap: 4rem;
+            animation: scroll 30s linear infinite;
+        }
+
+        .clients-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .client-logo {
+            flex-shrink: 0;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            background: var(--color-white);
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-fast);
+        }
+
+        .client-logo:hover {
+            transform: scale(1.05);
+            box-shadow: var(--shadow-md);
+        }
+
+        .client-logo span {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-stone);
+            white-space: nowrap;
         }
 
         /* About Section */
         .about {
-            background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+            background: linear-gradient(160deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -552,17 +948,18 @@
             content: '';
             position: absolute;
             top: 0;
+            left: 0;
             right: 0;
-            width: 50%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-            opacity: 0.5;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse 50% 50% at 0% 100%, rgba(201, 162, 39, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse 50% 50% at 100% 0%, rgba(139, 90, 43, 0.1) 0%, transparent 50%);
         }
 
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 5rem;
             align-items: center;
             max-width: 1400px;
             margin: 0 auto;
@@ -572,45 +969,63 @@
 
         .about-text .section-label {
             color: var(--color-accent-light);
+            justify-content: flex-start;
+        }
+
+        .about-text .section-label::before {
+            display: none;
         }
 
         .about-text .section-title {
             color: var(--color-white);
+            text-align: left;
         }
 
         .about-text p {
             color: rgba(255, 255, 255, 0.8);
             margin-bottom: 1.5rem;
+            font-size: 1.1rem;
         }
 
         .about-features {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
-            margin-top: 2rem;
+            margin-top: 2.5rem;
         }
 
         .about-feature {
             display: flex;
             align-items: flex-start;
             gap: 1rem;
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all var(--transition-fast);
+        }
+
+        .about-feature:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateX(5px);
         }
 
         .about-feature-icon {
-            width: 50px;
-            height: 50px;
-            min-width: 50px;
-            background: rgba(212, 168, 75, 0.2);
-            border-radius: 8px;
+            width: 48px;
+            height: 48px;
+            min-width: 48px;
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-earth) 100%);
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.25rem;
+            color: var(--color-white);
         }
 
         .about-feature h4 {
             color: var(--color-white);
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 0.25rem;
             font-family: var(--font-body);
             font-weight: 600;
@@ -619,6 +1034,7 @@
         .about-feature p {
             font-size: 0.9rem;
             margin: 0;
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .about-visual {
@@ -628,18 +1044,38 @@
         }
 
         .about-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            padding: 2rem;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: var(--blur-md);
+            -webkit-backdrop-filter: var(--blur-md);
+            border-radius: 20px;
+            padding: 2.5rem;
             text-align: center;
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-accent), transparent);
+            opacity: 0;
+            transition: opacity var(--transition-fast);
         }
 
         .about-card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .about-card:hover::before {
+            opacity: 1;
         }
 
         .about-card:first-child {
@@ -648,11 +1084,12 @@
 
         .about-card-number {
             font-family: var(--font-display);
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
             color: var(--color-accent);
             display: block;
             margin-bottom: 0.5rem;
+            line-height: 1;
         }
 
         .about-card-label {
@@ -660,9 +1097,103 @@
             font-size: 1rem;
         }
 
+        /* Testimonials Section */
+        .testimonials {
+            background: var(--color-cream);
+            position: relative;
+        }
+
+        .testimonials::before {
+            content: '"';
+            position: absolute;
+            top: 2rem;
+            left: 5%;
+            font-size: 20rem;
+            font-family: var(--font-display);
+            color: var(--color-accent);
+            opacity: 0.05;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: var(--color-white);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-medium);
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .testimonial-stars span {
+            color: var(--color-accent);
+            font-size: 1.1rem;
+        }
+
+        .testimonial-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-cream);
+        }
+
+        .testimonial-avatar {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--color-white);
+            font-family: var(--font-display);
+        }
+
+        .testimonial-info h4 {
+            font-size: 1.1rem;
+            font-family: var(--font-body);
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .testimonial-info p {
+            font-size: 0.9rem;
+            color: var(--color-text-light);
+        }
+
         /* Projects Section */
         .projects {
-            background: var(--color-cream);
+            background: var(--color-white);
         }
 
         .projects-grid {
@@ -674,21 +1205,21 @@
         }
 
         .project-card {
-            background: var(--color-white);
-            border-radius: 16px;
+            background: var(--color-cream);
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: var(--shadow-sm);
             transition: all var(--transition-medium);
+            cursor: pointer;
         }
 
         .project-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-10px);
             box-shadow: var(--shadow-xl);
         }
 
         .project-image {
-            height: 220px;
-            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-stone) 100%);
+            height: 240px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -697,40 +1228,58 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+            background: 
+                linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.05) 50%, transparent 60%),
+                url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54 30c0 13.255-10.745 24-24 24S6 43.255 6 30 16.745 6 30 6s24 10.745 24 24z' stroke='%23fff' stroke-opacity='.05' fill='none'/%3E%3C/svg%3E");
+            background-size: 100% 100%, 60px 60px;
+        }
+
+        .project-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(13, 33, 55, 0.8) 0%, transparent 50%);
         }
 
         .project-category {
             position: absolute;
-            top: 1rem;
-            left: 1rem;
+            top: 1.25rem;
+            left: 1.25rem;
             background: var(--color-accent);
             color: var(--color-primary-dark);
-            padding: 0.4rem 1rem;
+            padding: 0.5rem 1.25rem;
             border-radius: 50px;
             font-size: 0.8rem;
             font-weight: 600;
+            z-index: 2;
+            letter-spacing: 0.5px;
         }
 
         .project-content {
-            padding: 1.5rem;
+            padding: 2rem;
         }
 
         .project-content h3 {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             margin-bottom: 0.75rem;
+            transition: color var(--transition-fast);
+        }
+
+        .project-card:hover .project-content h3 {
+            color: var(--color-accent);
         }
 
         .project-content p {
             font-size: 0.95rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.7;
         }
 
         .project-meta {
             display: flex;
             gap: 1.5rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--color-cream);
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(0,0,0,0.05);
             font-size: 0.85rem;
             color: var(--color-stone-light);
         }
@@ -738,12 +1287,12 @@
         .project-meta span {
             display: flex;
             align-items: center;
-            gap: 0.4rem;
+            gap: 0.5rem;
         }
 
         /* Why Choose Us */
         .why-us {
-            background: var(--color-white);
+            background: var(--color-cream);
         }
 
         .why-us-grid {
@@ -756,49 +1305,90 @@
 
         .why-card {
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem 2rem;
+            background: var(--color-white);
+            border-radius: 20px;
+            transition: all var(--transition-medium);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-earth));
+            transform: scaleX(0);
+            transition: transform var(--transition-medium);
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .why-card:hover::before {
+            transform: scaleX(1);
         }
 
         .why-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 1.5rem;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 1.75rem;
             background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-white) 100%);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            box-shadow: var(--shadow-md);
+            font-size: 2.25rem;
+            box-shadow: var(--shadow-md), inset 0 -2px 5px rgba(0,0,0,0.05);
             transition: all var(--transition-medium);
         }
 
         .why-card:hover .why-icon {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(-5deg);
             box-shadow: var(--shadow-lg);
         }
 
         .why-card h3 {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             margin-bottom: 0.75rem;
         }
 
         .why-card p {
             font-size: 0.95rem;
+            line-height: 1.7;
         }
 
         /* Contact Section */
         .contact {
-            background: var(--color-cream);
+            background: var(--color-white);
             position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--color-cream) 0%, transparent 100%);
+            pointer-events: none;
         }
 
         .contact-wrapper {
             display: grid;
-            grid-template-columns: 1fr 1.2fr;
+            grid-template-columns: 1fr 1.3fr;
             gap: 4rem;
-            max-width: 1200px;
+            max-width: 1300px;
             margin: 0 auto;
+            position: relative;
+            z-index: 2;
         }
 
         .contact-info {
@@ -806,53 +1396,70 @@
         }
 
         .contact-info .section-label {
-            text-align: left;
+            justify-content: flex-start;
+        }
+
+        .contact-info .section-label::before {
+            display: none;
         }
 
         .contact-info .section-title {
             text-align: left;
-            margin-bottom: 1.5rem;
         }
 
         .contact-info > p {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+            font-size: 1.1rem;
         }
 
         .contact-details {
-            margin-top: 2rem;
+            margin-top: 2.5rem;
         }
 
         .contact-item {
             display: flex;
             align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+            padding: 1.25rem;
+            background: var(--color-cream);
+            border-radius: 16px;
+            transition: all var(--transition-fast);
+        }
+
+        .contact-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-md);
         }
 
         .contact-item-icon {
-            width: 50px;
-            height: 50px;
-            min-width: 50px;
-            background: var(--color-white);
-            border-radius: 12px;
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            border-radius: 14px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             box-shadow: var(--shadow-sm);
         }
 
         .contact-item-text h4 {
-            font-size: 1rem;
+            font-size: 0.85rem;
             font-family: var(--font-body);
             font-weight: 600;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.35rem;
+            color: var(--color-text-light);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .contact-item-text p,
         .contact-item-text a {
-            color: var(--color-text-light);
-            font-size: 1rem;
+            color: var(--color-text);
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
         .contact-item-text a:hover {
@@ -860,10 +1467,22 @@
         }
 
         .contact-form {
-            background: var(--color-white);
-            padding: 3rem;
-            border-radius: 20px;
+            background: var(--color-cream);
+            padding: 3.5rem;
+            border-radius: 24px;
             box-shadow: var(--shadow-lg);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .form-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-subtitle {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
         }
 
         .form-row {
@@ -879,7 +1498,7 @@
         .form-group label {
             display: block;
             font-weight: 600;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.625rem;
             color: var(--color-text);
             font-size: 0.95rem;
         }
@@ -889,12 +1508,13 @@
         .form-group select {
             width: 100%;
             padding: 1rem 1.25rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 8px;
+            border: 2px solid transparent;
+            border-radius: 12px;
             font-size: 1rem;
             font-family: var(--font-body);
             transition: all var(--transition-fast);
-            background: var(--color-cream);
+            background: var(--color-white);
+            box-shadow: var(--shadow-sm);
         }
 
         .form-group input:focus,
@@ -902,11 +1522,16 @@
         .form-group select:focus {
             outline: none;
             border-color: var(--color-accent);
-            background: var(--color-white);
+            box-shadow: var(--shadow-md), 0 0 0 4px var(--color-accent-glow);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--color-stone-light);
         }
 
         .form-group textarea {
-            min-height: 150px;
+            min-height: 140px;
             resize: vertical;
         }
 
@@ -914,18 +1539,30 @@
             width: 100%;
             padding: 1.25rem;
             font-size: 1.1rem;
+            border-radius: 12px;
         }
 
         /* Footer */
         .footer {
             background: var(--color-primary-dark);
             color: var(--color-white);
-            padding: 4rem 5% 2rem;
+            padding: 5rem 5% 2rem;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-earth), var(--color-accent));
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
             gap: 3rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -937,44 +1574,90 @@
             margin-bottom: 1.5rem;
         }
 
-        .footer-brand .logo-text {
+        .footer-brand .logo-text-main,
+        .footer-brand .logo-text-sub {
             color: var(--color-white);
         }
 
-        .footer-brand p {
+        .footer-brand > p {
             color: rgba(255, 255, 255, 0.7);
             font-size: 1rem;
             line-height: 1.8;
             margin-bottom: 1.5rem;
         }
 
-        .footer-social {
+        .footer-certifications {
             display: flex;
             gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-cert {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.8);
+        }
+
+        .footer-cert-icon {
+            width: 24px;
+            height: 24px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: var(--color-primary-dark);
+            font-weight: 700;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 0.75rem;
         }
 
         .footer-social a {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             background: rgba(255, 255, 255, 0.1);
-            border-radius: 8px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             transition: all var(--transition-fast);
+            font-size: 1.1rem;
         }
 
         .footer-social a:hover {
             background: var(--color-accent);
             color: var(--color-primary-dark);
+            transform: translateY(-3px);
         }
 
         .footer-column h4 {
             color: var(--color-white);
             font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.75rem;
             font-family: var(--font-body);
             font-weight: 600;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        .footer-column h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: var(--color-accent);
         }
 
         .footer-links {
@@ -982,18 +1665,73 @@
         }
 
         .footer-links li {
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.875rem;
         }
 
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.95rem;
             transition: all var(--transition-fast);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a::before {
+            content: '→';
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all var(--transition-fast);
         }
 
         .footer-links a:hover {
             color: var(--color-accent);
-            padding-left: 5px;
+            padding-left: 0;
+        }
+
+        .footer-links a:hover::before {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .footer-newsletter p {
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.875rem 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: rgba(255,255,255,0.1);
+            color: var(--color-white);
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .newsletter-form button {
+            padding: 0.875rem 1.5rem;
+            background: var(--color-accent);
+            color: var(--color-primary-dark);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+
+        .newsletter-form button:hover {
+            background: var(--color-accent-light);
         }
 
         .footer-bottom {
@@ -1010,34 +1748,72 @@
             font-size: 0.9rem;
         }
 
-        /* Scroll to Top */
-        .scroll-top {
+        .footer-bottom-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-bottom-links a {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Floating Action Buttons */
+        .floating-buttons {
             position: fixed;
             bottom: 2rem;
             right: 2rem;
-            width: 50px;
-            height: 50px;
-            background: var(--color-accent);
-            color: var(--color-primary-dark);
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-medium);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
             z-index: 999;
-            font-size: 1.25rem;
+        }
+
+        .float-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all var(--transition-fast);
             box-shadow: var(--shadow-lg);
         }
 
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
+        .float-btn.whatsapp {
+            background: #25D366;
+            color: white;
         }
 
-        .scroll-top:hover {
-            transform: translateY(-3px);
+        .float-btn.whatsapp:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+        }
+
+        .float-btn.scroll-top {
+            background: var(--color-accent);
+            color: var(--color-primary-dark);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+        }
+
+        .float-btn.scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .float-btn.scroll-top:hover {
             background: var(--color-accent-light);
+            transform: translateY(-3px);
         }
 
         /* Responsive */
@@ -1075,7 +1851,25 @@
                 text-align: center;
             }
 
+            .contact-info .section-label {
+                justify-content: center;
+            }
+
+            .contact-info .section-title {
+                text-align: center;
+            }
+
             .contact-item {
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+            .trust-bar-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .trust-badges {
                 justify-content: center;
             }
         }
@@ -1085,14 +1879,15 @@
                 position: fixed;
                 top: 0;
                 right: -100%;
-                width: 80%;
+                width: 85%;
                 max-width: 400px;
                 height: 100vh;
                 background: var(--color-primary-dark);
                 flex-direction: column;
-                padding: 5rem 2rem 2rem;
+                padding: 6rem 2rem 2rem;
                 gap: 1.5rem;
                 transition: right var(--transition-medium);
+                box-shadow: -10px 0 30px rgba(0,0,0,0.3);
             }
 
             .nav-links.active {
@@ -1116,6 +1911,10 @@
 
             .stat {
                 flex: 1 1 40%;
+            }
+
+            .stat::after {
+                display: none;
             }
 
             .services-grid {
@@ -1143,6 +1942,11 @@
                 text-align: center;
             }
 
+            .footer-column h4::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
             .footer-brand .logo {
                 justify-content: center;
             }
@@ -1151,39 +1955,73 @@
                 justify-content: center;
             }
 
+            .footer-certifications {
+                justify-content: center;
+            }
+
             .footer-bottom {
                 flex-direction: column;
                 gap: 1rem;
                 text-align: center;
             }
+
+            .footer-bottom-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .scroll-indicator {
+                display: none;
+            }
         }
 
-        /* Animations on Scroll */
+        /* Reveal Animations */
         .reveal {
             opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.8s ease;
+            transform: translateY(50px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .reveal.active {
             opacity: 1;
             transform: translateY(0);
         }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
     </style>
 </head>
 <body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-logo">RB</div>
+        <div class="preloader-bar">
+            <div class="preloader-progress"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="logo">
             <div class="logo-icon">RB</div>
-            <span class="logo-text">Ram Bhoomi Engineering</span>
+            <div class="logo-text">
+                <span class="logo-text-main">Ram Bhoomi Engineering</span>
+                <span class="logo-text-sub">Engineering Excellence</span>
+            </div>
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+            <li><a href="#contact" class="nav-cta">Get Quote</a></li>
         </ul>
         <div class="mobile-toggle" id="mobileToggle">
             <span></span>
@@ -1194,41 +2032,102 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-bg-shapes">
-            <div class="hero-shape"></div>
-            <div class="hero-shape"></div>
-            <div class="hero-shape"></div>
+        <div class="hero-mesh"></div>
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        <div class="hero-lines">
+            <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+                <path d="M0,400 Q360,200 720,400 T1440,400" stroke="rgba(255,255,255,0.1)" fill="none" stroke-width="1"/>
+                <path d="M0,450 Q360,250 720,450 T1440,450" stroke="rgba(255,255,255,0.05)" fill="none" stroke-width="1"/>
+            </svg>
         </div>
         <div class="hero-content">
-            <span class="hero-badge">Excellence in Engineering</span>
-            <h1>Building Strong <span>Foundations</span> for Tomorrow</h1>
+            <span class="hero-badge">
+                <span class="badge-dot"></span>
+                Trusted Engineering Partner Since 2010
+            </span>
+            <h1>Building Strong <span class="highlight">Foundations</span> for India's Tomorrow</h1>
             <p class="hero-subtitle">
-                Premier geotechnical and civil engineering consultancy delivering innovative solutions 
-                for soil investigation, foundation design, and infrastructure development across India.
+                Premier geotechnical and civil engineering consultancy delivering innovative, 
+                reliable solutions for soil investigation, foundation design, and infrastructure 
+                development across the nation.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">
                     Get Free Consultation
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
                 <a href="#services" class="btn btn-secondary">
-                    Explore Services
+                    Explore Our Services
                 </a>
             </div>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">500+</span>
+                    <span class="stat-number" data-target="500">0</span>
                     <span class="stat-label">Projects Delivered</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">15+</span>
+                    <span class="stat-number" data-target="15">0</span>
                     <span class="stat-label">Years Experience</span>
                 </div>
                 <div class="stat">
-                    <span class="stat-number">200+</span>
+                    <span class="stat-number" data-target="200">0</span>
                     <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="50">0</span>
+                    <span class="stat-label">Expert Engineers</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="trust-bar-content">
+            <span class="trust-text">Certified & Accredited</span>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">ISO</div>
+                    <div class="trust-badge-text">
+                        <span class="trust-badge-label">Certified</span>
+                        <span class="trust-badge-value">ISO 9001:2015</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">✓</div>
+                    <div class="trust-badge-text">
+                        <span class="trust-badge-label">Registered</span>
+                        <span class="trust-badge-value">MSME Certified</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">★</div>
+                    <div class="trust-badge-text">
+                        <span class="trust-badge-label">Member</span>
+                        <span class="trust-badge-value">IGS India</span>
+                    </div>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">⚡</div>
+                    <div class="trust-badge-text">
+                        <span class="trust-badge-label">Empaneled</span>
+                        <span class="trust-badge-value">Govt. Projects</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1237,15 +2136,15 @@
     <!-- Services Section -->
     <section class="section services" id="services">
         <div class="section-header reveal">
-            <span class="section-label">Our Services</span>
+            <span class="section-label">Our Expertise</span>
             <h2 class="section-title">Comprehensive Engineering Solutions</h2>
             <p class="section-desc">
                 From ground investigation to structural monitoring, we provide end-to-end 
-                geotechnical and civil engineering services tailored to your project needs.
+                geotechnical and civil engineering services with precision and reliability.
             </p>
         </div>
         <div class="services-grid">
-            <div class="service-card reveal">
+            <div class="service-card reveal reveal-delay-1">
                 <div class="service-icon">🔬</div>
                 <h3>Soil Investigation</h3>
                 <p>
@@ -1259,7 +2158,7 @@
                     <li>Laboratory Soil Testing</li>
                 </ul>
             </div>
-            <div class="service-card reveal">
+            <div class="service-card reveal reveal-delay-2">
                 <div class="service-icon">🏗️</div>
                 <h3>Foundation Engineering</h3>
                 <p>
@@ -1273,7 +2172,7 @@
                     <li>Settlement Analysis</li>
                 </ul>
             </div>
-            <div class="service-card reveal">
+            <div class="service-card reveal reveal-delay-3">
                 <div class="service-icon">⛰️</div>
                 <h3>Slope Stability</h3>
                 <p>
@@ -1287,7 +2186,7 @@
                     <li>Landslide Mitigation</li>
                 </ul>
             </div>
-            <div class="service-card reveal">
+            <div class="service-card reveal reveal-delay-1">
                 <div class="service-icon">🛤️</div>
                 <h3>Infrastructure Projects</h3>
                 <p>
@@ -1301,7 +2200,7 @@
                     <li>Bridge Substructure Design</li>
                 </ul>
             </div>
-            <div class="service-card reveal">
+            <div class="service-card reveal reveal-delay-2">
                 <div class="service-icon">📊</div>
                 <h3>Quality Testing</h3>
                 <p>
@@ -1315,7 +2214,7 @@
                     <li>Third Party Inspection</li>
                 </ul>
             </div>
-            <div class="service-card reveal">
+            <div class="service-card reveal reveal-delay-3">
                 <div class="service-icon">📐</div>
                 <h3>Structural Services</h3>
                 <p>
@@ -1332,64 +2231,156 @@
         </div>
     </section>
 
+    <!-- Clients Marquee -->
+    <section class="section clients" style="padding: 4rem 0;">
+        <div class="section-header reveal" style="margin-bottom: 3rem;">
+            <span class="section-label">Trusted By</span>
+            <h2 class="section-title" style="font-size: 2rem;">Our Valued Clients</h2>
+        </div>
+        <div class="clients-scroll">
+            <div class="client-logo"><span>L&T Construction</span></div>
+            <div class="client-logo"><span>NHAI</span></div>
+            <div class="client-logo"><span>DMRC</span></div>
+            <div class="client-logo"><span>Shapoorji Pallonji</span></div>
+            <div class="client-logo"><span>Tata Projects</span></div>
+            <div class="client-logo"><span>Godrej Properties</span></div>
+            <div class="client-logo"><span>DLF Ltd</span></div>
+            <div class="client-logo"><span>Sobha Developers</span></div>
+            <div class="client-logo"><span>L&T Construction</span></div>
+            <div class="client-logo"><span>NHAI</span></div>
+            <div class="client-logo"><span>DMRC</span></div>
+            <div class="client-logo"><span>Shapoorji Pallonji</span></div>
+            <div class="client-logo"><span>Tata Projects</span></div>
+            <div class="client-logo"><span>Godrej Properties</span></div>
+            <div class="client-logo"><span>DLF Ltd</span></div>
+            <div class="client-logo"><span>Sobha Developers</span></div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="section about" id="about">
         <div class="about-content">
             <div class="about-text reveal">
-                <span class="section-label">About Us</span>
-                <h2 class="section-title">Engineering Excellence Since Inception</h2>
+                <span class="section-label">About Ram Bhoomi</span>
+                <h2 class="section-title">Engineering Excellence Built on Trust & Innovation</h2>
                 <p>
                     Ram Bhoomi Engineering is a trusted name in geotechnical and civil engineering 
-                    consultancy services. With a team of experienced engineers and state-of-the-art 
-                    equipment, we deliver reliable solutions for complex engineering challenges.
+                    consultancy services. With a team of highly experienced engineers and state-of-the-art 
+                    equipment, we deliver reliable, innovative solutions for complex engineering challenges.
                 </p>
                 <p>
                     Our commitment to quality, safety, and innovation has earned us the trust of 
-                    leading developers, contractors, and government agencies across the nation.
+                    leading developers, contractors, and government agencies across India. We take pride 
+                    in being a responsible engineering partner that prioritizes accuracy and integrity.
                 </p>
                 <div class="about-features">
                     <div class="about-feature">
-                        <div class="about-feature-icon">✓</div>
+                        <div class="about-feature-icon">👨‍🔬</div>
                         <div>
                             <h4>Expert Team</h4>
-                            <p>Qualified engineers with decades of experience</p>
+                            <p>Qualified engineers with decades of hands-on experience</p>
                         </div>
                     </div>
                     <div class="about-feature">
-                        <div class="about-feature-icon">✓</div>
+                        <div class="about-feature-icon">🔧</div>
                         <div>
                             <h4>Modern Equipment</h4>
-                            <p>Latest technology for accurate results</p>
+                            <p>Latest technology for precise & accurate results</p>
                         </div>
                     </div>
                     <div class="about-feature">
-                        <div class="about-feature-icon">✓</div>
+                        <div class="about-feature-icon">✅</div>
                         <div>
                             <h4>Quality Assured</h4>
-                            <p>ISO certified processes & procedures</p>
+                            <p>ISO certified processes & rigorous QC</p>
                         </div>
                     </div>
                     <div class="about-feature">
-                        <div class="about-feature-icon">✓</div>
+                        <div class="about-feature-icon">⏱️</div>
                         <div>
                             <h4>Timely Delivery</h4>
-                            <p>On-time project completion guaranteed</p>
+                            <p>On-time project completion, always</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-visual reveal">
                 <div class="about-card">
-                    <span class="about-card-number">500+</span>
+                    <span class="about-card-number" data-target="500">0</span>
                     <span class="about-card-label">Projects Successfully Completed</span>
                 </div>
                 <div class="about-card">
-                    <span class="about-card-number">15+</span>
-                    <span class="about-card-label">Years of Experience</span>
+                    <span class="about-card-number" data-target="15">0</span>
+                    <span class="about-card-label">Years of Excellence</span>
                 </div>
                 <div class="about-card">
-                    <span class="about-card-number">50+</span>
+                    <span class="about-card-number" data-target="50">0</span>
                     <span class="about-card-label">Expert Engineers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="section-header reveal">
+            <span class="section-label">Client Testimonials</span>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-desc">
+                Don't just take our word for it. Here's what our valued clients 
+                have to say about working with Ram Bhoomi Engineering.
+            </p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal reveal-delay-1">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                    "Ram Bhoomi Engineering provided exceptional soil investigation services for our 
+                    high-rise project. Their detailed reports and professional approach helped us make 
+                    informed foundation design decisions. Highly recommended!"
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">AK</div>
+                    <div class="testimonial-info">
+                        <h4>Arun Kumar</h4>
+                        <p>Project Director, Leading Construction Firm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal reveal-delay-2">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                    "We've been working with Ram Bhoomi for over 5 years on multiple infrastructure 
+                    projects. Their consistency in quality and timely delivery makes them our 
+                    preferred geotechnical partner."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">RS</div>
+                    <div class="testimonial-info">
+                        <h4>Rajesh Sharma</h4>
+                        <p>Chief Engineer, Infrastructure Division</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal reveal-delay-3">
+                <div class="testimonial-stars">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <p class="testimonial-text">
+                    "The team's expertise in slope stability analysis saved our hillside project 
+                    from potential disasters. Their proactive approach and detailed recommendations 
+                    were invaluable."
+                </p>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar">PM</div>
+                    <div class="testimonial-info">
+                        <h4>Priya Menon</h4>
+                        <p>Senior Architect, Design Studio</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1406,25 +2397,25 @@
             </p>
         </div>
         <div class="projects-grid">
-            <div class="project-card reveal">
+            <div class="project-card reveal reveal-delay-1">
                 <div class="project-image">
                     <span class="project-category">Infrastructure</span>
                 </div>
                 <div class="project-content">
-                    <h3>Highway Expansion Project</h3>
-                    <p>Comprehensive soil investigation and foundation design for 120km highway expansion.</p>
+                    <h3>National Highway Expansion</h3>
+                    <p>Comprehensive soil investigation and foundation design for 120km highway expansion project.</p>
                     <div class="project-meta">
                         <span>📍 Maharashtra</span>
                         <span>📅 2024</span>
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card reveal reveal-delay-2">
                 <div class="project-image">
                     <span class="project-category">Commercial</span>
                 </div>
                 <div class="project-content">
-                    <h3>IT Park Foundation</h3>
+                    <h3>IT Park Complex</h3>
                     <p>Deep foundation design and pile load testing for 50-story IT park complex.</p>
                     <div class="project-meta">
                         <span>📍 Bengaluru</span>
@@ -1432,7 +2423,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card reveal reveal-delay-3">
                 <div class="project-image">
                     <span class="project-category">Metro Rail</span>
                 </div>
@@ -1445,7 +2436,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card reveal reveal-delay-1">
                 <div class="project-image">
                     <span class="project-category">Industrial</span>
                 </div>
@@ -1458,7 +2449,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card reveal reveal-delay-2">
                 <div class="project-image">
                     <span class="project-category">Residential</span>
                 </div>
@@ -1471,7 +2462,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-card reveal">
+            <div class="project-card reveal reveal-delay-3">
                 <div class="project-image">
                     <span class="project-category">Bridge</span>
                 </div>
@@ -1490,32 +2481,32 @@
     <!-- Why Choose Us -->
     <section class="section why-us">
         <div class="section-header reveal">
-            <span class="section-label">Why Choose Us</span>
+            <span class="section-label">Why Ram Bhoomi</span>
             <h2 class="section-title">The Ram Bhoomi Advantage</h2>
             <p class="section-desc">
                 What sets us apart in delivering exceptional engineering solutions.
             </p>
         </div>
         <div class="why-us-grid">
-            <div class="why-card reveal">
+            <div class="why-card reveal reveal-delay-1">
                 <div class="why-icon">🎯</div>
                 <h3>Precision & Accuracy</h3>
-                <p>State-of-the-art equipment and rigorous quality control for reliable results.</p>
+                <p>State-of-the-art equipment and rigorous quality control for reliable, accurate results.</p>
             </div>
-            <div class="why-card reveal">
+            <div class="why-card reveal reveal-delay-2">
                 <div class="why-icon">⚡</div>
                 <h3>Quick Turnaround</h3>
-                <p>Efficient processes ensuring timely delivery without compromising quality.</p>
+                <p>Efficient processes ensuring timely delivery without ever compromising on quality.</p>
             </div>
-            <div class="why-card reveal">
+            <div class="why-card reveal reveal-delay-3">
                 <div class="why-icon">💰</div>
                 <h3>Cost Effective</h3>
-                <p>Optimized solutions that reduce overall project costs while ensuring safety.</p>
+                <p>Optimized solutions that reduce overall project costs while ensuring complete safety.</p>
             </div>
-            <div class="why-card reveal">
+            <div class="why-card reveal reveal-delay-4">
                 <div class="why-icon">🤝</div>
                 <h3>Trusted Partner</h3>
-                <p>Long-term relationships built on transparency, integrity, and excellence.</p>
+                <p>Long-term relationships built on transparency, integrity, and engineering excellence.</p>
             </div>
         </div>
     </section>
@@ -1541,8 +2532,8 @@
                     <div class="contact-item">
                         <div class="contact-item-icon">📍</div>
                         <div class="contact-item-text">
-                            <h4>Office Location</h4>
-                            <p>India</p>
+                            <h4>Location</h4>
+                            <p>Pan India Services</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1555,11 +2546,13 @@
                 </div>
             </div>
             <div class="contact-form reveal">
+                <h3 class="form-title">Request a Quote</h3>
+                <p class="form-subtitle">Fill out the form and we'll get back to you within 24 hours.</p>
                 <form action="https://formspree.io/f/rambhoomiengineering@gmail.com" method="POST">
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address *</label>
@@ -1587,11 +2580,11 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Project Details *</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your project requirements..." required></textarea>
+                        <textarea id="message" name="message" placeholder="Tell us about your project requirements, location, and timeline..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary form-submit">
                         Send Message
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                             <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
                         </svg>
                     </button>
@@ -1606,13 +2599,27 @@
             <div class="footer-brand">
                 <div class="logo">
                     <div class="logo-icon">RB</div>
-                    <span class="logo-text">Ram Bhoomi Engineering</span>
+                    <div class="logo-text">
+                        <span class="logo-text-main">Ram Bhoomi Engineering</span>
+                        <span class="logo-text-sub">Engineering Excellence</span>
+                    </div>
                 </div>
                 <p>
                     Building strong foundations for India's infrastructure development. 
-                    Your trusted partner in geotechnical and civil engineering solutions.
+                    Your trusted partner in geotechnical and civil engineering solutions 
+                    since 2010.
                 </p>
-                <div class="footer-social">
+                <div class="footer-certifications">
+                    <div class="footer-cert">
+                        <div class="footer-cert-icon">ISO</div>
+                        <span>ISO 9001:2015</span>
+                    </div>
+                    <div class="footer-cert">
+                        <div class="footer-cert-icon">✓</div>
+                        <span>MSME Certified</span>
+                    </div>
+                </div>
+                <div class="footer-social" style="margin-top: 1.5rem;">
                     <a href="#" aria-label="LinkedIn">in</a>
                     <a href="#" aria-label="Twitter">𝕏</a>
                     <a href="#" aria-label="Facebook">f</a>
@@ -1638,35 +2645,56 @@
                     <li><a href="#services">Structural Services</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h4>Contact Info</h4>
+            <div class="footer-column footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for industry insights and company updates.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">→</button>
+                </form>
+                <h4 style="margin-top: 2rem;">Contact</h4>
                 <ul class="footer-links">
                     <li><a href="mailto:rambhoomiengineering@gmail.com">rambhoomiengineering@gmail.com</a></li>
-                    <li><a href="#contact">Get a Quote</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Ram Bhoomi Engineering. All rights reserved.</p>
-            <p>Engineered with Excellence</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Sitemap</a>
+            </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="mailto:rambhoomiengineering@gmail.com" class="float-btn whatsapp" title="Email Us" style="background: var(--color-accent); color: var(--color-primary-dark);">
+            ✉
+        </a>
+        <button class="float-btn scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+    </div>
 
     <script>
+        // Preloader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('preloader').classList.add('hidden');
+            }, 1500);
+        });
+
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
-        const scrollTop = document.getElementById('scrollTop');
+        const scrollTopBtn = document.getElementById('scrollTop');
         
         window.addEventListener('scroll', () => {
             if (window.scrollY > 100) {
                 navbar.classList.add('scrolled');
-                scrollTop.classList.add('visible');
+                scrollTopBtn.classList.add('visible');
             } else {
                 navbar.classList.remove('scrolled');
-                scrollTop.classList.remove('visible');
+                scrollTopBtn.classList.remove('visible');
             }
         });
 
@@ -1686,7 +2714,7 @@
         });
 
         // Scroll to top
-        scrollTop.addEventListener('click', () => {
+        scrollTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
@@ -1706,7 +2734,7 @@
         };
 
         window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll(); // Initial check
+        revealOnScroll();
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1714,42 +2742,76 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
                 }
             });
         });
 
-        // Animate stats on scroll
-        const animateStats = () => {
-            const stats = document.querySelectorAll('.stat-number, .about-card-number');
-            stats.forEach(stat => {
-                const target = parseInt(stat.textContent);
-                if (isNaN(target)) return;
-                
+        // Animated counter
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('[data-target]');
+            
+            counters.forEach(counter => {
                 const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
-                        if (entry.isIntersecting) {
+                        if (entry.isIntersecting && !counter.classList.contains('counted')) {
+                            counter.classList.add('counted');
+                            const target = parseInt(counter.getAttribute('data-target'));
+                            const duration = 2000;
+                            const increment = target / (duration / 16);
                             let current = 0;
-                            const increment = target / 50;
-                            const timer = setInterval(() => {
+                            
+                            const updateCounter = () => {
                                 current += increment;
-                                if (current >= target) {
-                                    stat.textContent = target + '+';
-                                    clearInterval(timer);
+                                if (current < target) {
+                                    counter.textContent = Math.floor(current) + '+';
+                                    requestAnimationFrame(updateCounter);
                                 } else {
-                                    stat.textContent = Math.floor(current) + '+';
+                                    counter.textContent = target + '+';
                                 }
-                            }, 30);
-                            observer.unobserve(entry.target);
+                            };
+                            
+                            updateCounter();
                         }
                     });
                 }, { threshold: 0.5 });
                 
-                observer.observe(stat);
+                observer.observe(counter);
             });
         };
 
-        animateStats();
+        animateCounters();
+
+        // Parallax effect for particles
+        document.addEventListener('mousemove', (e) => {
+            const particles = document.querySelectorAll('.particle');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            particles.forEach((particle, index) => {
+                const speed = (index + 1) * 0.5;
+                particle.style.transform = `translate(${x * speed * 20}px, ${y * speed * 20}px)`;
+            });
+        });
+
+        // Form submission feedback
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('submit', function(e) {
+                const submitBtn = this.querySelector('button[type="submit"]');
+                if (submitBtn && !submitBtn.classList.contains('newsletter-btn')) {
+                    submitBtn.innerHTML = 'Sending... ⏳';
+                    submitBtn.disabled = true;
+                }
+            });
+        });
     </script>
 </body>
 </html>
