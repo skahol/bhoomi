@@ -1135,21 +1135,21 @@
             </div>
             <div class="contact-form-box reveal">
                 <h3 class="contact-form-title">Send us a Message</h3>
-                <p class="contact-form-subtitle">We'll get back to you as soon as possible.</p>
-                <form action="mailto:rambhoomiengineering@gmail.com" method="post" enctype="text/plain">
+                <p class="contact-form-subtitle">Fill in your details and we'll get back to you.</p>
+                <form id="contactForm">
                     <div class="form-row">
                         <div class="form-group">
                             <label>Your Name</label>
-                            <input type="text" name="name" placeholder="Full name" required>
+                            <input type="text" id="userName" placeholder="Full name" required>
                         </div>
                         <div class="form-group">
                             <label>Email Address</label>
-                            <input type="email" name="email" placeholder="your@email.com" required>
+                            <input type="email" id="userEmail" placeholder="your@email.com" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>Service Required</label>
-                        <select name="service">
+                        <select id="userService">
                             <option value="">Select a service</option>
                             <option value="Soil Investigation">Soil Investigation</option>
                             <option value="Foundation Engineering">Foundation Engineering</option>
@@ -1162,13 +1162,18 @@
                     </div>
                     <div class="form-group">
                         <label>Your Message</label>
-                        <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+                        <textarea id="userMessage" placeholder="Tell us about your project..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary form-submit">
+                    <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
                         Send Message
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                     </button>
                 </form>
+                <div id="formSuccess" style="display:none; text-align:center; padding: 2rem;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">✓</div>
+                    <h3 style="color: var(--color-accent); margin-bottom: 0.5rem;">Message Ready!</h3>
+                    <p style="color: var(--color-text-muted);">Your email app will open with your message. Just hit send!</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1370,6 +1375,41 @@
 
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll();
+
+        // Contact Form - Opens email client with formatted message
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('userName').value;
+            const email = document.getElementById('userEmail').value;
+            const service = document.getElementById('userService').value || 'Not specified';
+            const message = document.getElementById('userMessage').value;
+
+            const subject = encodeURIComponent(`Inquiry from ${name} - ${service}`);
+            const body = encodeURIComponent(
+`Name: ${name}
+Email: ${email}
+Service Required: ${service}
+
+Message:
+${message}
+
+---
+Sent from Ram Bhoomi Engineering website`
+            );
+
+            // Show success state
+            contactForm.style.display = 'none';
+            formSuccess.style.display = 'block';
+
+            // Open email client
+            setTimeout(() => {
+                window.location.href = `mailto:rambhoomiengineering@gmail.com?subject=${subject}&body=${body}`;
+            }, 500);
+        });
     </script>
 </body>
 </html>
