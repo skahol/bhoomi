@@ -1,14 +1,12 @@
-# Ram Bhoomi Engineering
+# Ram Bhoomi Engineering Pvt. Ltd.
 
-Professional website for Ram Bhoomi Engineering Solutions - A premier geotechnical and civil engineering consultancy.
+Professional website for Ram Bhoomi Engineering Pvt. Ltd. - A premier geotechnical and civil engineering consultancy.
 
-## 🌐 Live Site
+## About
 
-Visit: [https://skahol.github.io/bhoomi](https://skahol.github.io/bhoomi)
+Ram Bhoomi Engineering Pvt. Ltd. is a newly established geotechnical and civil engineering consultancy committed to delivering reliable, innovative solutions across India.
 
-## 🏗️ About
-
-Ram Bhoomi Engineering is a trusted name in geotechnical and civil engineering consultancy services, delivering innovative solutions for:
+### Services
 
 - Soil Investigation
 - Foundation Engineering
@@ -17,29 +15,17 @@ Ram Bhoomi Engineering is a trusted name in geotechnical and civil engineering c
 - Quality Testing
 - Structural Services
 
-## 📧 Contact
+## Contact
 
 **Email:** rambhoomiengineering@gmail.com
 
-## 🚀 Deployment
-
-This site is hosted on GitHub Pages. To deploy:
-
-1. Go to repository Settings → Pages
-2. Under "Source", select "Deploy from a branch"
-3. Select `main` branch and `/ (root)` folder
-4. Click Save
-
-The site will be live at `https://skahol.github.io/bhoomi`
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - Pure HTML5, CSS3, JavaScript
-- No external dependencies (except Google Fonts)
+- Interactive particle system (Canvas API)
 - Fully responsive design
-- SEO optimized
-- Performance optimized
+- No external dependencies
 
-## 📄 License
+## License
 
-© 2026 Ram Bhoomi Engineering. All rights reserved.
+© 2026 Ram Bhoomi Engineering Pvt. Ltd. All rights reserved.
