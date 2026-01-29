@@ -1136,21 +1136,21 @@
             <div class="contact-form-box reveal">
                 <h3 class="contact-form-title">Send us a Message</h3>
                 <p class="contact-form-subtitle">Fill in your details and we'll get back to you.</p>
-                <form id="contactForm">
+                <form id="contactForm" autocomplete="on">
                     <div class="form-row">
                         <div class="form-group">
-                            <label>Your Name</label>
-                            <input type="text" id="userName" placeholder="Full name" required>
+                            <label for="userName">Your Name *</label>
+                            <input type="text" id="userName" name="name" autocomplete="name" placeholder="Full name" required>
                         </div>
                         <div class="form-group">
-                            <label>Email Address</label>
-                            <input type="email" id="userEmail" placeholder="your@email.com" required>
+                            <label for="userEmail">Email Address *</label>
+                            <input type="email" id="userEmail" name="email" autocomplete="email" placeholder="your@email.com" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Service Required</label>
-                        <select id="userService">
-                            <option value="">Select a service</option>
+                        <label for="userService">Service Required</label>
+                        <select id="userService" name="service" autocomplete="off">
+                            <option value="">Select a service (optional)</option>
                             <option value="Soil Investigation">Soil Investigation</option>
                             <option value="Foundation Engineering">Foundation Engineering</option>
                             <option value="Slope Stability">Slope Stability</option>
@@ -1161,8 +1161,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Your Message</label>
-                        <textarea id="userMessage" placeholder="Tell us about your project..." required></textarea>
+                        <label for="userMessage">Your Message *</label>
+                        <textarea id="userMessage" name="message" autocomplete="off" placeholder="Tell us about your project..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
                         Send Message
