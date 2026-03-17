@@ -12,7 +12,7 @@
     <title>Ram Bhoomi Engineering Pvt. Ltd. | Geotechnical & Civil Engineering</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230a1628' rx='20' width='100' height='100'/><text x='50' y='62' text-anchor='middle' fill='%23c9a227' font-family='Georgia,serif' font-size='40' font-weight='bold'>RB</text></svg>">
+    <link rel="icon" type="image/png" href="logo.png">
     
     <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,30 +101,20 @@
         }
 
         .logo-mark {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, var(--color-accent) 0%, #8b6914 100%);
-            border-radius: 12px;
+            width: 52px;
+            height: 52px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: var(--color-bg);
             position: relative;
             overflow: hidden;
         }
 
-        .logo-mark::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.3) 50%, transparent 60%);
-            animation: shine 4s infinite;
+        .logo-mark img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         @keyframes shine {
@@ -770,17 +760,19 @@
         }
 
         .footer-logo {
-            width: 40px;
-            height: 40px;
-            background: var(--color-accent);
-            border-radius: 10px;
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 0.9rem;
-            color: var(--color-bg);
+            overflow: hidden;
+        }
+
+        .footer-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .footer-name {
@@ -946,7 +938,7 @@
     <!-- Navigation -->
     <nav id="navbar">
         <a href="#" class="logo">
-            <div class="logo-mark">RB</div>
+            <div class="logo-mark"><img src="logo.png" alt="Ram Bhoomi Engineering Logo"></div>
             <span class="logo-text">Ram Bhoomi Engineering</span>
         </a>
         <ul class="nav-links" id="navLinks">
@@ -1189,7 +1181,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <div class="footer-logo">RB</div>
+                <div class="footer-logo"><img src="logo.png" alt="Ram Bhoomi Engineering Logo"></div>
                 <span class="footer-name">Ram Bhoomi Engineering Pvt. Ltd.</span>
             </div>
             <p class="footer-copy">© 2026 All rights reserved.</p>
